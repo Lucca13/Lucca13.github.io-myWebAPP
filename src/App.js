@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import BusinessList from './components/Business/BusinessList';
@@ -50,13 +50,13 @@ class Business extends React.Component {
 	}
 }
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <div className="App">
         <h1>ravenous</h1>
         <SearchBar />
-        <BusinessList prop={businesses} />
+        <BusinessList businesses={businesses} />
       </div>
     );
   }

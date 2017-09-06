@@ -8,9 +8,10 @@ class BusinessList extends React.Component {
 			<div className="BusinessList">
 			  {
 			    this.props.businesses.map(
-			      callBackBusiness(business) {
-			        return <Business business={this.business} />;
-			      });
+			      function(business) {
+			        return <Business business={business} />;
+			      }
+					)
 			  }
 			</div>
 		);
